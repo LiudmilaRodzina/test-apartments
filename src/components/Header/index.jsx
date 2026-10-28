@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useConfig } from '../../hooks/useConfig';
+import fallbackLogo from '../../assets/images/logo.png';
 import styles from './styles.module.css';
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
         minute: '2-digit',
       });
 
-      const formattedDate = now
+      const [weekday, datePart] = now
         .toLocaleDateString('ru-RU', {
           day: '2-digit',
           month: '2-digit',
@@ -24,10 +25,12 @@ const Header = () => {
           weekday: 'short',
         })
         .replace(/\sг\./, '')
-        .toUpperCase();
+        .split(', ');
 
       setTime(formattedTime);
-      setDate(formattedDate);
+      setDate(
+        `${datePart}, ${weekday.charAt(0).toUpperCase()}${weekday.slice(1)}`,
+      );
     };
 
     updateDateTime();
@@ -47,21 +50,27 @@ const Header = () => {
   }, []);
 
   if (!config) return null;
-  const { str1, str2, str3 } = config;
+
+  const { str4, str5, str11, logo } = config;
+  const logoSrc = logo || fallbackLogo;
 
   return (
     <header className={styles.header}>
-      <div className={styles.left}>
-        <div className={styles.top}>
-          <span className={styles.str1}>{str1}</span>
-          <span className={styles.str2}>{str2}</span>
-        </div>
-        <span className={styles.str3}>{str3}</span>
-      </div>
-
-      <div className={styles.right}>
+      <div className={styles.datetime}>
         <span className={styles.time}>{time}</span>
         <span className={styles.date}>{date}</span>
+      </div>
+
+      <div className={styles.brand}>
+        <div className={styles.title}>
+          <span>{str4}</span>
+          <span>{str5}</span>
+        </div>
+        <span className={styles.subtitle}>{str11}</span>
+      </div>
+
+      <div className={styles.logoWrap}>
+        <img className={styles.logo} src={logoSrc} alt="" />
       </div>
     </header>
   );

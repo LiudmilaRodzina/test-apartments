@@ -1,0 +1,24 @@
+.actionBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 1rem) / 2);
+  /* width: 37.4rem; */
+  height: 9rem;
+  font-weight: 300;
+  background-color: var(--bg-dimmed);
+  text-shadow: var(--text-shadow);
+}
+
+.icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 1.6rem;
+  filter: drop-shadow(var(--text-shadow));
+}

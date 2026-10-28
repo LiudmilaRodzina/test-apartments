@@ -1,6 +1,5 @@
 import { useConfig } from '../../hooks/useConfig';
 import { LockClosedIcon, LockOpenIcon } from '@heroicons/react/24/solid';
-import Hero from '../../components/Hero';
 import styles from './styles.module.css';
 
 const modeConfig = {
@@ -25,7 +24,6 @@ const ModePage = () => {
 
   return (
     <div className={styles.page}>
-      <Hero />
       <section className={styles.content}>
         <span className={styles.title}>{title}</span>
         <span className={styles.message}>{message}</span>

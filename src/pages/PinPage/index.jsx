@@ -7,7 +7,6 @@ import {
 } from '@heroicons/react/20/solid';
 import { useInactivityRedirect } from '../../hooks/useInactivityRedirect';
 import { androidActions } from '../../services/androidActions';
-import Hero from '../../components/Hero';
 import Display from '../../components/Display';
 import KeyPad from '../../components/KeyPad';
 import Button from '../../components/Button';
@@ -35,7 +34,6 @@ const PinPage = () => {
 
   return (
     <div className={styles.page}>
-      <Hero />
       <section className={styles.content}>
         <div className={styles.top}>
           <Display

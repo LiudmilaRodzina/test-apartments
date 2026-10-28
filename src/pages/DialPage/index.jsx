@@ -6,7 +6,6 @@ import {
   LockOpenIcon,
 } from '@heroicons/react/20/solid';
 import { useInactivityRedirect } from '../../hooks/useInactivityRedirect';
-import Hero from '../../components/Hero';
 import Display from '../../components/Display';
 import KeyPad from '../../components/KeyPad';
 import CallModal from '../../components/CallModal';
@@ -53,7 +52,6 @@ const DialPage = () => {
 
   return (
     <div className={styles.page}>
-      <Hero />
       <section className={styles.content}>
         <div className={styles.top}>
           <Display

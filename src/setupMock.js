@@ -28,15 +28,17 @@ if (import.meta.env.DEV) {
           str1: 'str1 |',
           str2: 'str2',
           str3: 'str3',
-          str4: 'str4',
-          str5: 'str5',
+          str4: 'ЖК "',
+          str5: 'ЖАСМИНОВАЯ"',
           str6: 'str6',
+          str11: 'вход на территорию',
           str13: 'str13',
           str14: 'str14',
           contacts: contacts,
           news: news,
           backgroundColor: '#793db9',
           backgroundImage: '/bg-image.png',
+          // font: 'Caveat',
         });
       }
 

@@ -4,6 +4,7 @@
   height: 100vh;
   overflow: hidden;
   background: var(--custom-bg, var(--background-default));
+  font-family: var(--app-font, 'RobotoCondensed', Arial, sans-serif);
 }
 
 .layout::before {
@@ -23,7 +24,7 @@
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .main {
