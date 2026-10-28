@@ -1,0 +1,49 @@
+.layout {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--custom-bg, var(--background-default));
+}
+
+.layout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 0;
+  z-index: 1;
+}
+
+.layout.success {
+  background: var(--background-success);
+}
+.layout.warning {
+  background: var(--background-warning);
+}
+.layout.error {
+  background: var(--background-warning);
+}
+.layout.info {
+  background: var(--background-info);
+}

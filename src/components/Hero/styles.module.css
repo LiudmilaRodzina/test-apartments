@@ -1,0 +1,34 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40rem;
+  padding: 0 3rem;
+
+  background-image: var(--hero-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.titleGroup {
+  margin-top: 4rem;
+}
+
+.mainTitle {
+  font-size: 7rem;
+}
+
+.subtitle {
+  font-size: 2.6rem;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  font-size: 15rem;
+}

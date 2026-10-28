@@ -1,0 +1,51 @@
+.notificationModal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  padding: 5rem 0;
+  z-index: 2;
+}
+
+.notificationModal.success {
+  background: var(--background-success);
+}
+.notificationModal.warning {
+  background: var(--background-warning);
+}
+.notificationModal.error {
+  background: var(--background-warning);
+}
+.notificationModal.info {
+  background: var(--background-info);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 33vh;
+  padding: 4rem;
+  background-color: var(--bg-dimmed);
+  margin-top: 10rem;
+}
+
+.title {
+  font-size: 6.4rem;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 5rem;
+}
+
+.message {
+  font-size: 4.8rem;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}

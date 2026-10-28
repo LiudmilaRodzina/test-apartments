@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top: 2px solid var(--text-color-light);
+  border-bottom: 2px solid var(--text-color-light);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.icon {
+  width: 7rem;
+  height: auto;
+  color: var(--color-warning);
+  filter: drop-shadow(var(--text-shadow));
+}
+
+.textWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 6.4rem;
+  color: var(--color-warning);
+  text-transform: uppercase;
+}

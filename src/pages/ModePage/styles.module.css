@@ -1,0 +1,45 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 33vh;
+  margin: 10rem -3rem 0;
+  background-color: var(--bg-dimmed);
+}
+
+.title {
+  font-size: 6.4rem;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 5rem;
+}
+
+.message {
+  font-weight: 300;
+  font-size: 2.6rem;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.icon {
+  width: 6rem;
+  height: auto;
+  filter: drop-shadow(var(--text-shadow));
+}

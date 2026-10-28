@@ -1,0 +1,38 @@
+.keypad {
+  display: flex;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  width: 13rem;
+  font-weight: 300;
+  font-size: 6.4rem;
+  background-color: var(--bg-dimmed);
+  text-shadow: var(--text-shadow);
+}
+
+.icon {
+  width: 6rem;
+  height: auto;
+  filter: drop-shadow(var(--text-shadow));
+}
+
+.iconOpen,
+.iconPhone {
+  color: var(--color-success);
+}
+
+.iconCross {
+  width: 7rem;
+  height: auto;
+  color: var(--color-warning);
+}

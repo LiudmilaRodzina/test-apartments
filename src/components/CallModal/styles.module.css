@@ -1,0 +1,62 @@
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  top: 16rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 3rem 4.5rem;
+}
+
+.callModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 74rem;
+  padding: 10rem 0 15rem;
+  background: var(--background-default-dimmed);
+  box-shadow: var(--text-shadow);
+  border: 2px solid var(--text-color-light);
+  opacity: 0.95;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 43rem;
+  height: 13rem;
+}
+
+.text {
+  font-size: 6.4rem;
+  margin-bottom: 5rem;
+}
+
+.number {
+  font-size: 4.8rem;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem 0 0 4rem;
+}
+
+.icon {
+  width: 8rem;
+  height: auto;
+  filter: drop-shadow(var(--text-shadow));
+}
+
+.cancelArea {
+  min-height: 13rem;
+  width: 100%;
+}

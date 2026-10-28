@@ -1,0 +1,44 @@
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 8rem;
+  margin-bottom: 2rem;
+  padding-right: 4rem;
+}
+
+.value {
+  flex: 1;
+  text-align: center;
+  direction: ltr;
+  font-size: 7rem;
+  text-shadow: var(--text-shadow);
+}
+
+.clearButton {
+  display: flex;
+  background: none;
+  box-shadow: none;
+  margin-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.clearButton:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+.icon {
+  width: 7rem;
+  height: auto;
+  filter: drop-shadow(var(--text-shadow));
+}
+
+.placeholder {
+  width: 100%;
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
