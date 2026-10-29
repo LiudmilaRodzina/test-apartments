@@ -38,50 +38,52 @@ const PinPage = () => {
 
   return (
     <div className={styles.page}>
-      <div className={styles.homeButtonWrap}>
+      <div className={styles.topBar}>
         <HomeButton />
       </div>
 
-      <div className={styles.panel}>
-        <div className={styles.prompt}>
-          {value.length === 0 ? (
-            <>
-              <span>Для открытия введите код +</span>
-              <LockOpenIcon className={styles.promptIcon} />
-            </>
-          ) : (
-            <span className={styles.asterisks}>
-              {value.map(() => '*').join('')}
-            </span>
-          )}
-        </div>
+      <div className={styles.content}>
+        <div className={styles.panel}>
+          <div className={styles.prompt}>
+            {value.length === 0 ? (
+              <>
+                <span>Для открытия введите код +</span>
+                <LockOpenIcon className={styles.promptIcon} />
+              </>
+            ) : (
+              <span className={styles.asterisks}>
+                {value.map(() => '*').join('')}
+              </span>
+            )}
+          </div>
 
-        <div className={styles.keys}>
-          {DIGITS.map((digit) => (
-            <Button
-              key={digit}
-              className={styles.key}
-              onPointerDown={() => handleDigit(digit)}
-            >
-              {digit}
+          <div className={styles.keys}>
+            {DIGITS.map((digit) => (
+              <Button
+                key={digit}
+                className={styles.key}
+                onPointerDown={() => handleDigit(digit)}
+              >
+                {digit}
+              </Button>
+            ))}
+
+            <Button className={styles.key} onPointerDown={handleDelete}>
+              <span className={styles.deleteKey}>
+                <BackspaceIcon className={styles.deleteIcon} />
+                <span className={styles.deleteLabel}>удалить</span>
+              </span>
             </Button>
-          ))}
+          </div>
 
-          <Button className={styles.key} onPointerDown={handleDelete}>
-            <span className={styles.deleteKey}>
-              <BackspaceIcon className={styles.deleteIcon} />
-              <span className={styles.deleteLabel}>удалить</span>
-            </span>
+          <Button
+            className={styles.openButton}
+            disabled={value.length === 0}
+            onPointerDown={handleOpen}
+          >
+            <LockOpenIcon className={styles.openIcon} />
           </Button>
         </div>
-
-        <Button
-          className={styles.openButton}
-          disabled={value.length === 0}
-          onPointerDown={handleOpen}
-        >
-          <LockOpenIcon className={styles.openIcon} />
-        </Button>
       </div>
     </div>
   );

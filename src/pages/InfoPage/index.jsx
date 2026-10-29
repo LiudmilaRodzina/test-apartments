@@ -1,34 +1,31 @@
-import { useNavigate } from 'react-router-dom';
-import { XMarkIcon } from '@heroicons/react/20/solid';
 import { useConfig } from '../../hooks/useConfig';
 import { useInactivityRedirect } from '../../hooks/useInactivityRedirect';
-import Button from '../../components/Button';
+import HomeButton from '../../components/HomeButton';
 import styles from './styles.module.css';
 
 const InfoPage = () => {
   const config = useConfig();
-  const navigate = useNavigate();
 
-  useInactivityRedirect();
+  // useInactivityRedirect();
 
   if (!config) return null;
   const { contacts, news } = config;
 
   return (
     <div className={styles.page}>
-      <div className={styles.content}>
-        <section className={styles.top}>
-          <Button className={styles.link} onPointerDown={() => navigate('/')}>
-            <XMarkIcon className={styles.icon} />
-          </Button>
+      <div className={styles.topBar}>
+        <HomeButton />
+      </div>
 
-          {contacts && (
+      <div className={styles.content}>
+        {contacts && (
+          <section className={styles.top}>
             <div
               className={styles.contacts}
               dangerouslySetInnerHTML={{ __html: contacts }}
             />
-          )}
-        </section>
+          </section>
+        )}
 
         {news && (
           <section className={styles.bottom}>
