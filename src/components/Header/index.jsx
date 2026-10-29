@@ -17,6 +17,7 @@ const Header = () => {
         minute: '2-digit',
       });
 
+      // ru-RU gives "ср, 28.10.26" — mock wants "28.10.26, Ср"
       const [weekday, datePart] = now
         .toLocaleDateString('ru-RU', {
           day: '2-digit',
@@ -56,21 +57,26 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.datetime}>
-        <span className={styles.time}>{time}</span>
-        <span className={styles.date}>{date}</span>
-      </div>
+      <img className={styles.logo} src={logoSrc} alt="" />
 
-      <div className={styles.brand}>
-        <div className={styles.title}>
-          <span>{str4}</span>
-          <span>{str5}</span>
+      <div className={styles.content}>
+        <div className={styles.datetime}>
+          <span className={styles.time}>{time}</span>
+          <span className={styles.date}>{date}</span>
         </div>
-        <span className={styles.subtitle}>{str11}</span>
-      </div>
 
-      <div className={styles.logoWrap}>
-        <img className={styles.logo} src={logoSrc} alt="" />
+        <div className={styles.brand}>
+          <div className={styles.title}>
+            <span>{str4}</span>
+            <span>{str5}</span>
+          </div>
+          <span className={styles.subtitle}>{str11}</span>
+        </div>
+
+        <div className={styles.datetimeSpacer} aria-hidden="true">
+          <span className={styles.time}>{time}</span>
+          <span className={styles.date}>{date}</span>
+        </div>
       </div>
     </header>
   );
