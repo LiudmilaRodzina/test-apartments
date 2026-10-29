@@ -8,17 +8,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc((100% - 1rem) / 2);
-  /* width: 37.4rem; */
-  height: 9rem;
   font-weight: 300;
+  width: 37.5rem;
+  height: 9rem;
   background-color: var(--bg-dimmed);
-  text-shadow: var(--text-shadow);
 }
 
 .icon {
-  width: 4.8rem;
-  height: 4.8rem;
-  margin-right: 1.6rem;
-  filter: drop-shadow(var(--text-shadow));
+  width: 5rem;
+  height: 5rem;
+  margin-right: 3rem;
 }

@@ -36,7 +36,7 @@ if (import.meta.env.DEV) {
           str14: 'str14',
           contacts: contacts,
           news: news,
-          backgroundColor: '#793db9',
+          // backgroundColor: '#793db9',
           backgroundImage: '/bg-image.png',
           // font: 'Caveat',
         });

@@ -19,8 +19,6 @@
   width: 100%;
   max-width: 74rem;
   padding: 10rem 0 15rem;
-  background: var(--background-default-dimmed);
-  box-shadow: var(--text-shadow);
   border: 2px solid var(--text-color-light);
   opacity: 0.95;
 }
@@ -53,7 +51,6 @@
 .icon {
   width: 8rem;
   height: auto;
-  filter: drop-shadow(var(--text-shadow));
 }
 
 .cancelArea {

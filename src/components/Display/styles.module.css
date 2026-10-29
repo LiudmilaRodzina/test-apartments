@@ -13,26 +13,22 @@
   text-align: center;
   direction: ltr;
   font-size: 7rem;
-  text-shadow: var(--text-shadow);
 }
 
 .clearButton {
   display: flex;
   background: none;
-  box-shadow: none;
   margin-left: 3rem;
   padding-bottom: 2rem;
 }
 
 .clearButton:active {
   transform: scale(0.98);
-  box-shadow: none;
 }
 
 .icon {
   width: 7rem;
   height: auto;
-  filter: drop-shadow(var(--text-shadow));
 }
 
 .placeholder {

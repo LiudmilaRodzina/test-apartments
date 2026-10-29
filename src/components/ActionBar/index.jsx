@@ -1,5 +1,5 @@
-import { LockOpenIcon, InformationCircleIcon } from '@heroicons/react/20/solid';
 import { useNavigate } from 'react-router-dom';
+import { InformationCircleIcon, LockOpenIcon } from '@heroicons/react/20/solid';
 import Button from '../Button';
 import styles from './styles.module.css';
 
@@ -8,18 +8,12 @@ const ActionBar = () => {
 
   return (
     <section className={styles.actionBar}>
-      <Button
-        className={styles.button}
-        onPointerDown={() => navigate('/info')}
-      >
+      <Button className={styles.button} onPointerDown={() => navigate('/info')}>
         <InformationCircleIcon className={styles.icon} />
         <span>инфо</span>
       </Button>
 
-      <Button
-        className={styles.button}
-        onPointerDown={() => navigate('/pin')}
-      >
+      <Button className={styles.button} onPointerDown={() => navigate('/pin')}>
         <LockOpenIcon className={styles.icon} />
         <span>пароль</span>
       </Button>

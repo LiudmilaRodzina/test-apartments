@@ -40,12 +40,10 @@
 .title {
   font-size: 6.4rem;
   text-align: center;
-  text-shadow: var(--text-shadow);
   margin-bottom: 5rem;
 }
 
 .message {
   font-size: 4.8rem;
   text-align: center;
-  text-shadow: var(--text-shadow);
 }

@@ -129,23 +129,7 @@
   --color-success: #14ae5c;
   --color-warning: #ff5a55;
 
-  --background-default: linear-gradient(
-    150deg,
-    #405454 2%,
-    #456060 15%,
-    #678787 50%,
-    #456060 98%,
-    #405454 100%
-  );
-
-  --background-default-dimmed: linear-gradient(
-    150deg,
-    rgba(64, 84, 84) 2%,
-    rgba(69, 96, 96) 15%,
-    rgba(103, 135, 135) 50%,
-    rgba(69, 96, 96, 0.8) 98%,
-    rgba(64, 84, 84, 0.85) 100%
-  );
+  --background-default: linear-gradient(0deg, #4896c1 3.83%, #0a486a 58.03%);
 
   --background-success: linear-gradient(
     150deg,
@@ -153,7 +137,7 @@
     #5a6f40 15%,
     #748e53 50%,
     #5a6f40 98%,
-    #4b5f32 100%
+    #4b5f32 100% 
   );
 
   --background-warning: linear-gradient(
@@ -174,8 +158,7 @@
     #2f3a4a 100%
   );
 
-  --bg-dimmed: rgba(48, 48, 48, 0.55);
-  --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --bg-dimmed: rgba(0, 0, 0, 0.4);
 }
 
 html,
@@ -242,5 +225,4 @@ button {
 a:active,
 button:active {
   transform: scale(0.98);
-  box-shadow: var(--text-shadow);
 }

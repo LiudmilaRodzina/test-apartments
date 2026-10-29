@@ -20,7 +20,6 @@
 .title {
   font-size: 6.4rem;
   text-align: center;
-  text-shadow: var(--text-shadow);
   margin-bottom: 5rem;
 }
 
@@ -28,7 +27,6 @@
   font-weight: 300;
   font-size: 2.6rem;
   text-align: center;
-  text-shadow: var(--text-shadow);
 }
 
 .iconWrapper {
@@ -41,5 +39,4 @@
 .icon {
   width: 6rem;
   height: auto;
-  filter: drop-shadow(var(--text-shadow));
 }

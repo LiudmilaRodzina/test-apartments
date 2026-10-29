@@ -52,7 +52,6 @@
 .icon {
   width: 6rem;
   height: auto;
-  filter: drop-shadow(var(--text-shadow));
 }
 .right {
   display: flex;
