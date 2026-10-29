@@ -2,7 +2,7 @@
   position: relative;
   width: calc(100% + 4rem);
   height: 17rem;
-  margin: -2rem -2rem 0.5rem;
+  margin: -2rem -2rem 1rem;
   overflow: hidden;
   z-index: 3;
 }

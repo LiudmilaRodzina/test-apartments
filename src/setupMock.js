@@ -44,58 +44,15 @@ if (import.meta.env.DEV) {
 
       if (action === 'onUpdatePrefixes') {
         const prefixes = [
-          {
-            id: '1',
-            name: 'Дом 2А',
-            prefix: '2а',
-            enabled: true,
-            apartments: [
-              { number: 1, name: '1' },
-              { number: 2, name: '2' },
-            ],
-          },
-          {
-            id: '2',
-            name: 'Корпус 2',
-            prefix: 'prefix2-',
-            enabled: true,
-          },
-          {
-            id: '3',
-            name: 'Корпус 3',
-            prefix: 'prefix3-',
-            enabled: true,
-          },
-          {
-            id: '4',
-            name: 'Корпус 4',
-            prefix: 'prefix4-',
-            enabled: true,
-          },
-          {
-            id: '5',
-            name: 'Корпус 5',
-            prefix: 'prefix5-',
-            enabled: true,
-          },
-          {
-            id: '6',
-            name: 'Корпус 6',
-            prefix: 'prefix6-',
-            enabled: true,
-          },
-          {
-            id: '7',
-            name: 'Корпус 7',
-            prefix: 'prefix7-',
-            enabled: true,
-          },
-          {
-            id: '8',
-            name: 'Корпус 8',
-            prefix: 'prefix8-',
-            enabled: true,
-          },
+          { id: '1', name: 'Дом 2А', prefix: '2а', enabled: true },
+          { id: '2', name: 'Дом 2Б', prefix: '2б', enabled: true },
+          { id: '3', name: 'Дом 2В', prefix: '2в', enabled: true },
+          { id: '4', name: 'Дом 2Г', prefix: '2г', enabled: true },
+          { id: '5', name: 'Дом 2Д', prefix: '2д', enabled: true },
+          { id: '6', name: 'Дом 2Е', prefix: '2е', enabled: true },
+          { id: '7', name: 'Дом 2Ж', prefix: '2ж', enabled: true },
+          { id: '8', name: 'Дом 2З', prefix: '2з', enabled: true },
+          { id: '9', name: 'Дом 2И', prefix: '2и', enabled: true },
         ];
 
         WebViewBridge.onUpdatePrefixes(prefixes);
