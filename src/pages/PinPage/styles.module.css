@@ -1,60 +1,101 @@
 .page {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding-bottom: 1.5rem;
+  min-height: 0;
 }
 
-.content {
+.homeButtonWrap {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
+.panel {
   display: flex;
   flex-direction: column;
+  margin-top: 30rem;
 }
 
-.top {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.link {
+.prompt {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13rem;
-  min-height: 13rem;
+  width: 44rem;
+  height: 9rem;
+  font-weight: 300;
+  font-size: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  margin-bottom: 1.8rem;
   background-color: var(--bg-dimmed);
 }
 
-.link:first-child {
-  margin-bottom: 1.5rem;
+.promptIcon {
+  width: 4rem;
+  height: 4rem;
+  padding-bottom: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-.link:nth-child(2) {
-  flex: 1;
+.asterisks {
+  letter-spacing: 0.6rem;
+  font-size: 4rem;
 }
 
-.link:last-child {
-  margin-top: 1.5rem;
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.8rem;
+  margin-bottom: 3.6rem;
 }
 
-.icon {
-  width: 6rem;
-  height: auto;
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.5rem;
+  height: 9rem;
+  background-color: var(--bg-dimmed);
 }
 
-.right {
+.deleteKey {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteIcon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.deleteLabel {
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.openButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44rem;
+  height: 9rem;
+  background-color: var(--bg-dimmed);
+}
+
+.openButton:disabled {
+  pointer-events: none;
+}
+
+.openIcon {
+  width: 5rem;
+  height: 5rem;
 }

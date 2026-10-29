@@ -11,6 +11,8 @@ const Button = ({
   };
 
   const handlePointerDown = (e) => {
+    if (props.disabled) return;
+
     if (e.pointerType === 'touch') e.preventDefault();
 
     beep();

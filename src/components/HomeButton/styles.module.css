@@ -1,0 +1,13 @@
+.homeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.5rem;
+  height: 9rem;
+  background-color: var(--bg-dimmed);
+}
+
+.icon {
+  width: 7rem;
+  height: 7rem;
+}
